@@ -1,0 +1,70 @@
+{
+    "public":{
+        "chainName": "chronic-chain",
+        "chainId": "athena-1",
+        "gtm": "{Add your Google Tag Manager ID here}",
+        "slashingWindow": 10000,
+        "uptimeWindow": 250,
+        "initialPageSize": 30,
+        "secp256k1": false,
+        "bech32PrefixAccAddr": "chronic",
+        "bech32PrefixAccPub": "chronicpub",
+        "bech32PrefixValAddr": "chronicvaloper",
+        "bech32PrefixValPub": "chronicvaloperpub",
+        "bech32PrefixConsAddr": "chronicvalcons",
+        "bech32PrefixConsPub": "chronicvalconspub",
+        "bondDenom": "ucht",
+        "powerReduction": 1000000,
+        "coins": [
+            {
+                "denom": "ucht",
+                "displayName": "CHT",
+                "fraction": 1000000
+            }, 
+            {
+                "denom": "ucgas",
+                "displayName": "CGAS",
+                "fraction": 1000000
+            } 
+        ],
+        "ledger":{
+            "coinType": 118,
+            "appName": "Cosmos",
+            "appVersion": "2.16.0",
+            "gasPrice": 0.02
+        },
+        "modules": {
+            "bank": true,
+            "supply": true,
+            "minting": false,
+            "gov": true,
+            "distribution": false
+        },
+        "coingeckoId": "cosmos",
+        "networks": "https://gist.githubusercontent.com/kwunyeung/8be4598c77c61e497dfc7220a678b3ee/raw/bd-networks.json",
+        "banners": false
+    },
+    "remote":{
+        "rpc":"http://167.99.9.158:26657/",
+        "api":"http://167.99.9.158:1317/"
+    },
+    "debug": {
+        "startTimer": true
+    },
+    "params":{
+        "startHeight": 1,
+        "defaultBlockTime": 5000,
+        "validatorUpdateWindow": 300,
+        "blockInterval": 15000,
+        "transactionsInterval": 18000,
+        "keybaseFetchingInterval": 18000000,
+        "consensusInterval": 1000,
+        "statusInterval":7500,
+        "signingInfoInterval": 1800000,
+        "proposalInterval": 5000,
+        "missedBlocksInterval": 60000,
+        "delegationInterval": 900000
+    }
+}
+
+
